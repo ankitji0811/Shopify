@@ -1,0 +1,47 @@
+<style>
+    .splide__slide{
+        width: 100px;
+        height: 300px;
+        background-color: chocolate;
+    }
+</style>
+
+<script src="{{ 'carousel.js' | asset_url }}" defer="defer"></script>
+
+<carousel-component>
+  <div
+    class="splide"
+    data-perPage="2"
+    data-perPageMobile="2"
+    data-splideType="fade"
+    data-perMove="1"
+    data-perMoveMobile="1"
+    data-gap="1rem"
+    data-gapOnMobile="1rem"
+    data-showArrow="false"
+    data-showArrowMobile="true"
+    data-showDots="true"
+    data-showDotsMobile="false"
+    data-autoPlay="true"
+    data-interval="2000"
+  >
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">Slide 01</li>
+        <li class="splide__slide">Slide 02</li>
+      </ul>
+    </div>
+  </div>
+</carousel-component>
+
+{% schema %}
+{
+  "name": "carousel sectiom",
+  "settings": [],
+  "presets": [
+    {
+      "name": "carousel section"
+    }
+  ]
+}
+{% endschema %}
